@@ -1,4 +1,4 @@
 # DailyByte
 
-[thedailybyte](https://thedailybyte.dev/)
-[dailycodingproblem](https://www.dailycodingproblem.com/)
+- [thedailybyte](https://thedailybyte.dev/)
+- [dailycodingproblem](https://www.dailycodingproblem.com/)
