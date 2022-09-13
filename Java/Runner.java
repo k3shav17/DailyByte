@@ -54,14 +54,27 @@ public class Runner {
 
     // ReverseList
 
-    Node node = new Node(1);
-    node.next = new Node(9);
-    node.next.next = new Node(3);
-    node.next.next.next = new Node(7);
-    node.next.next.next.next = new Node(5);
-    node.next.next.next.next.next = new Node(2);
+    // Node node = new Node(1);
+    // node.next = new Node(9);
+    // node.next.next = new Node(3);
+    // node.next.next.next = new Node(7);
+    // node.next.next.next.next = new Node(5);
+    // node.next.next.next.next.next = new Node(2);
 
-    printLists(ReverseList.reverse(node));
+    // printLists(ReverseList.reverse(node));
+
+    TreeNode rootNode = new TreeNode(8);
+    rootNode.right = new TreeNode(9);
+    rootNode.left = new TreeNode(6);
+    // rootNode.right.right = new TreeNode(10);
+    // rootNode.right.left = new TreeNode(8);
+
+    TreeNode res = FindValue.nodeOfValue(7, rootNode);
+
+    if (res == null)
+      System.out.println("null");
+    else
+      System.out.println(res.data);
 
   }
 
