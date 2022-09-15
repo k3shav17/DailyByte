@@ -63,19 +63,26 @@ public class Runner {
 
     // printLists(ReverseList.reverse(node));
 
-    TreeNode rootNode = new TreeNode(8);
+    // TreeNode rootNode = new TreeNode(8);
+    // rootNode.right = new TreeNode(9);
+    // rootNode.left = new TreeNode(6);
+    // // rootNode.right.right = new TreeNode(10);
+    // // rootNode.right.left = new TreeNode(8);
+
+    // TreeNode res = FindValue.nodeOfValue(7, rootNode);
+
+    // if (res == null)
+    // System.out.println("null");
+    // else
+    // System.out.println(res.data);
+
+    TreeNode rootNode = new TreeNode(5);
     rootNode.right = new TreeNode(9);
-    rootNode.left = new TreeNode(6);
-    // rootNode.right.right = new TreeNode(10);
-    // rootNode.right.left = new TreeNode(8);
+    rootNode.left = new TreeNode(2);
+    rootNode.left.right = new TreeNode(3);
+    rootNode.left.left = new TreeNode(1);
 
-    TreeNode res = FindValue.nodeOfValue(7, rootNode);
-
-    if (res == null)
-      System.out.println("null");
-    else
-      System.out.println(res.data);
-
+    System.out.println(BinaryToLinkedList.binaryToLinked(rootNode));
   }
 
   public static void printLists(Node node) {
