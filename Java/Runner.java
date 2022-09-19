@@ -1,3 +1,4 @@
+
 public class Runner {
   public static void main(String[] args) {
 
@@ -76,13 +77,47 @@ public class Runner {
     // else
     // System.out.println(res.data);
 
-    TreeNode rootNode = new TreeNode(5);
-    rootNode.right = new TreeNode(9);
-    rootNode.left = new TreeNode(2);
-    rootNode.left.right = new TreeNode(3);
-    rootNode.left.left = new TreeNode(1);
+    // TreeNode rootNode = new TreeNode(5);
+    // rootNode.right = new TreeNode(9);
+    // rootNode.left = new TreeNode(2);
+    // rootNode.left.right = new TreeNode(3);
+    // rootNode.left.left = new TreeNode(1);
 
-    System.out.println(BinaryToLinkedList.binaryToLinked(rootNode));
+    // System.out.println(BinaryToLinkedList.binaryToLinked(rootNode));
+
+    // TreeNode firstTree = new TreeNode(1);
+    // firstTree.right = new TreeNode(9);
+    // firstTree.right.right = new TreeNode(18);
+
+    // TreeNode secondTree = new TreeNode(1);
+    // secondTree.left = new TreeNode(9);
+    // secondTree.left.right = new TreeNode(18);
+
+    // System.out.println(IdenticalTrees.areTreesIdentical(firstTree, secondTree));
+
+    // TreeNode rootNode = new TreeNode(29);
+    // rootNode.right = new TreeNode(50);
+    // rootNode.right.right = new TreeNode(59);
+    // rootNode.right.left = new TreeNode(42);
+
+    // rootNode.left = new TreeNode(17);
+    // rootNode.left.left = new TreeNode(1);
+    // TreeNode rootNode = new TreeNode(2);
+    // rootNode.right = new TreeNode(100);
+
+    // System.out.println(MinimumDifference.minimumDifferenceOfTwoNodes(rootNode));
+
+    // FindTheMode
+    TreeNode rootNode = new TreeNode(7);
+    rootNode.left = new TreeNode(4);
+    rootNode.left.right = new TreeNode(4);
+    rootNode.left.left = new TreeNode(1);
+    rootNode.right = new TreeNode(9);
+    rootNode.right.right = new TreeNode(9);
+    rootNode.right.right.right = new TreeNode(9);
+    rootNode.right.left = new TreeNode(8);
+
+    System.out.println(FindTheMode.modeInTree(rootNode));
   }
 
   public static void printLists(Node node) {

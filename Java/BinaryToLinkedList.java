@@ -11,7 +11,7 @@ import java.util.LinkedList;
  * 5 / \ 2 9 / \ 1 3 return...
  *
  * 1 \ 2 \ 3 \ 5 \ 9 Ex: Given the following tree...
- *
+
  * 5 \ 6 return...
  *
  * 5 \ 6
@@ -19,17 +19,16 @@ import java.util.LinkedList;
 
 public class BinaryToLinkedList {
 
-  static LinkedList<Integer> linkedList = new LinkedList<>();
+    static LinkedList<Integer> linkedList = new LinkedList<>();
 
-  public static LinkedList<Integer> binaryToLinked(TreeNode root) {
+    public static LinkedList<Integer> binaryToLinked(TreeNode root) {
 
-    if (root == null)
-      return linkedList;
+        if (root == null) return linkedList;
 
-    binaryToLinked(root.left);
-    linkedList.add(root.data);
-    binaryToLinked(root.right);
+        binaryToLinked(root.left);
+        linkedList.add(root.data);
+        binaryToLinked(root.right);
 
-    return linkedList;
-  }
+        return linkedList;
+    }
 }

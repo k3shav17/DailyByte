@@ -29,7 +29,6 @@ public class CompareKeystrokes {
       else if (!stack.isEmpty())
         stack.pop();
     }
-    System.out.println(String.valueOf(stack));
     return String.valueOf(stack);
   }
 
