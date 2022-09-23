@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Runner {
   public static void main(String[] args) {
@@ -108,16 +109,45 @@ public class Runner {
     // System.out.println(MinimumDifference.minimumDifferenceOfTwoNodes(rootNode));
 
     // FindTheMode
-    TreeNode rootNode = new TreeNode(7);
-    rootNode.left = new TreeNode(4);
-    rootNode.left.right = new TreeNode(4);
-    rootNode.left.left = new TreeNode(1);
-    rootNode.right = new TreeNode(9);
-    rootNode.right.right = new TreeNode(9);
-    rootNode.right.right.right = new TreeNode(9);
-    rootNode.right.left = new TreeNode(8);
+    // TreeNode rootNode = new TreeNode(7);
+    // rootNode.left = new TreeNode(4);
+    // rootNode.left.right = new TreeNode(4);
+    // rootNode.left.left = new TreeNode(1);
+    // rootNode.right = new TreeNode(9);
+    // rootNode.right.right = new TreeNode(9);
+    // rootNode.right.right.right = new TreeNode(9);
+    // rootNode.right.left = new TreeNode(8);
 
-    System.out.println(FindTheMode.modeInTree(rootNode));
+    // System.out.println(FindTheMode.modeInTree(rootNode));
+
+    // Visible Values
+    // TreeNode rootNode = new TreeNode(7);
+    // rootNode.left = new TreeNode(4);
+    // rootNode.left.left = new TreeNode(1);
+    // rootNode.left.right = new TreeNode(4);
+
+    // rootNode.right = new TreeNode(9);
+    // rootNode.right.right = new TreeNode(9);
+    // rootNode.right.right.right = new TreeNode(9);
+    // rootNode.right.left = new TreeNode(8);
+
+    // ArrayList<Integer> resultList = VisibleValues.visibleLeaves(rootNode);
+    // System.out.println(resultList);
+
+    // BottomsUp
+    // TreeNode rootNode = new TreeNode(7);
+    // rootNode.left = new TreeNode(6);
+    // rootNode.left.left = new TreeNode(3);
+    // rootNode.left.right = new TreeNode(3);
+
+    // rootNode.right = new TreeNode(2);
+
+    TreeNode rootNode = new TreeNode(2);
+    rootNode.left = new TreeNode(1);
+    rootNode.right = new TreeNode(2);
+
+    System.out.println(BottomsUp.bottomToTop(rootNode));
+
   }
 
   public static void printLists(Node node) {
