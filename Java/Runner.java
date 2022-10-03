@@ -1,3 +1,4 @@
+
 public class Runner {
   public static void main(String[] args) {
 
@@ -151,12 +152,21 @@ public class Runner {
     // rootNode.right = new TreeNode(2);
     // rootNode.left = new TreeNode(1);
 
-    TreeNode rootNode = new TreeNode(5);
-    rootNode.left = new TreeNode(1);
-    rootNode.right = new TreeNode(29);
-    rootNode.right.right = new TreeNode(13);
-    rootNode.right.left = new TreeNode(4);
-    System.out.println(CalculateDepth.depthOfTree(rootNode));
+    // TreeNode rootNode = new TreeNode(5);
+    // rootNode.left = new TreeNode(1);
+    // rootNode.right = new TreeNode(29);
+    // rootNode.right.right = new TreeNode(13);
+    // rootNode.right.left = new TreeNode(4);
+    // System.out.println(CalculateDepth.depthOfTree(rootNode));
+
+    // SymmetricalTree
+    TreeNode rootNode = new TreeNode(1);
+    rootNode.right = new TreeNode(5);
+    rootNode.right.right = new TreeNode(7);
+    rootNode.left = new TreeNode(5);
+    rootNode.left.right = new TreeNode(7);
+
+    System.out.println(SymmetricalTree.isSymmetrical(rootNode));
   }
 
   public static void printLists(Node node) {
