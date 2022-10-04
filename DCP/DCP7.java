@@ -13,7 +13,7 @@ import java.util.Set;
  */
 
 public class DCP7 {
-  public static Node intersectionPoint(Node headA, Node headB) {
+  public static NodeDCP intersectionPoint(NodeDCP headA, NodeDCP headB) {
 
     if (headA == null && headB == null)
       return headA;
@@ -39,26 +39,26 @@ public class DCP7 {
 
   public static void main(String[] args) {
 
-    Node rootNode = new Node(3);
-    rootNode.next = new Node(7);
-    rootNode.next.next = new Node(8);
-    rootNode.next.next.next = new Node(10);
+    NodeDCP rootNode = new NodeDCP(3);
+    rootNode.next = new NodeDCP(7);
+    rootNode.next.next = new NodeDCP(8);
+    rootNode.next.next.next = new NodeDCP(10);
 
-    Node rootNod = new Node(99);
-    rootNod.next = new Node(1);
-    rootNod.next.next = new Node(8);
-    rootNod.next.next.next = new Node(10);
+    NodeDCP rootNod = new NodeDCP(99);
+    rootNod.next = new NodeDCP(1);
+    rootNod.next.next = new NodeDCP(8);
+    rootNod.next.next.next = new NodeDCP(10);
 
     System.out.println(intersectionPoint(rootNode, rootNod).data);
   }
 }
 
-class Node {
+class NodeDCP {
 
   int data;
-  Node next;
+  NodeDCP next;
 
-  public Node(int data) {
+  public NodeDCP(int data) {
     this.data = data;
   }
 }
