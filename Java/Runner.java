@@ -159,26 +159,26 @@ public class Runner {
     // System.out.println(CalculateDepth.depthOfTree(rootNode));
 
     // SymmetricalTree
-//    TreeNode rootNode = new TreeNode(1);
-//    rootNode.right = new TreeNode(5);
-//    rootNode.right.right = new TreeNode(7);
-//    rootNode.left = new TreeNode(5);
-//    rootNode.left.right = new TreeNode(7);
-//    System.out.println(SymmetricalTree.isSymmetrical(rootNode));
+    // TreeNode rootNode = new TreeNode(1);
+    // rootNode.right = new TreeNode(5);
+    // rootNode.right.right = new TreeNode(7);
+    // rootNode.left = new TreeNode(5);
+    // rootNode.left.right = new TreeNode(7);
+    // System.out.println(SymmetricalTree.isSymmetrical(rootNode));
 
     // SumLeftLeaves
-    TreeNode treeNode = new TreeNode(3);
-    treeNode.right  = new TreeNode(20);
-    treeNode.left  = new TreeNode(9);
-    treeNode.right.right  = new TreeNode(17);
-    treeNode.right.left  = new TreeNode(15);
+    // TreeNode treeNode = new TreeNode(3);
+    // treeNode.right = new TreeNode(20);
+    // treeNode.left = new TreeNode(9);
+    // treeNode.right.right = new TreeNode(17);
+    // treeNode.right.left = new TreeNode(15);
 
-//    TreeNode treeNode = new TreeNode(2);
-//    treeNode.left = new TreeNode(4);
-//    treeNode.right = new TreeNode(2);
-//    treeNode.left.right = new TreeNode(9);
-//    treeNode.left.left = new TreeNode(3);
-    System.out.println(SumLeftLeaves.leftLeaves(treeNode));
+    // TreeNode treeNode = new TreeNode(2);
+    // treeNode.left = new TreeNode(4);
+    // treeNode.right = new TreeNode(2);
+    // treeNode.left.right = new TreeNode(9);
+    // treeNode.left.left = new TreeNode(3);
+    // System.out.println(SumLeftLeaves.leftLeaves(treeNode));
   }
 
   public static void printLists(Node node) {
