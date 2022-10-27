@@ -179,6 +179,13 @@ public class Runner {
     // treeNode.left.right = new TreeNode(9);
     // treeNode.left.left = new TreeNode(3);
     // System.out.println(SumLeftLeaves.leftLeaves(treeNode));
+
+    // Edit Distance
+    // System.out.println(EditDistance.minimumNoOfOperationsToMatch("beach", "batch"));
+
+    // MaximumSubarray
+    int[] nums = {1, 5,-2, -3, 7}; 
+    System.out.println(MaximumSubarray.maxSumOfSubarrayElements(nums));
   }
 
   public static void printLists(Node node) {
