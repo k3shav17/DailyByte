@@ -184,8 +184,15 @@ public class Runner {
     // System.out.println(EditDistance.minimumNoOfOperationsToMatch("beach", "batch"));
 
     // MaximumSubarray
-    int[] nums = {1, 5,-2, -3, 7}; 
-    System.out.println(MaximumSubarray.maxSumOfSubarrayElements(nums));
+    // int[] nums = {1, 5,-2, -3, 7}; 
+    // System.out.println(MaximumSubarray.maxSumOfSubarrayElements(nums));
+
+    // DictionaryWords
+    String s = "pizzaplanet";
+    String[] dictionary = {"plane", "pizza"};
+
+    System.out.println(DictionaryWords.areSegmented(s, dictionary));
+
   }
 
   public static void printLists(Node node) {
