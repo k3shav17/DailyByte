@@ -11,42 +11,42 @@
 
 public class ContainsCycle {
 
-  public static boolean hasCycle(Node head) {
+    public static boolean hasCycle(Node head) {
 
-    if (head == null)
-      return false;
+        if (head == null)
+            return false;
 
-    Node slow = head;
-    Node fast = head.next;
+        Node slow = head;
+        Node fast = head.next;
 
-    while (slow != fast) {
+        while (slow != fast) {
 
-      if (fast == null || fast.next == null)
-        return false;
+            if (fast == null || fast.next == null)
+                return false;
 
-      slow = slow.next;
-      fast = fast.next.next;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return true;
     }
 
-    return true;
-  }
+    // public static boolean hasCycle(Node head) {
 
-  // public static boolean hasCycle(Node head) {
+    // if (head == null)
+    // return false;
 
-  // if (head == null)
-  // return false;
+    // HashSet<Integer> visited = new HashSet<>();
+    // Node curr = head;
 
-  // HashSet<Integer> visited = new HashSet<>();
-  // Node curr = head;
+    // while (curr.next != null) {
 
-  // while (curr.next != null) {
-
-  // if (visited.contains(curr.data)) {
-  // return true;
-  // } else {
-  // visited.add(curr.data);
-  // }
-  // }
-  // return false;
-  // }
+    // if (visited.contains(curr.data)) {
+    // return true;
+    // } else {
+    // visited.add(curr.data);
+    // }
+    // }
+    // return false;
+    // }
 }
